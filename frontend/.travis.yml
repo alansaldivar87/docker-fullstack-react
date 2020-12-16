@@ -7,4 +7,4 @@ before_install:
   - docker build -t alansaldivar87/docker-fullstack-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true alansaldivar87/docker-fullstack-react npm run test
+  - docker run alansaldivar87/docker-fullstack-react npm run test -- --coverage
